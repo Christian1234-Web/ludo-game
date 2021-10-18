@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/ludo.css">
+    <title>Ludo Game</title>
+</head>
+<body>
+    
+    <div id="btnRes">
+    <!-- <button id="restart">restart</button> -->
+
+<!-- Button trigger modal -->
+<button type="button" id="restart" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+   Restart Game
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         Are you sure you want to restart the game?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="yes">Yes</button>
+          <button type="button" class="btn btn-primary"data-bs-dismiss="modal" id="no">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+    <section class="container_welcome " id="welcome">
+        <!-- <form action="w3schools.com" method="PUT"> -->
+ <h1>THE BEST DICE GAME ENJOY</h1>
+       <div>
+        <p id="error"> </p>
+    </div>
+    <br>
+    <div class="sub1">
+    <button id="sub1">Continue</button>
+</div>
+        </section>
+    <section class="container_information container" id="information">
+        <!-- <form action="w3schools.com" method="PUT"> -->
+        <input type="name" placeholder="Username" id="userName" required> 
+       <div>
+        <p id="error1"> </p>
+    </div>
+    <!-- </form> -->
+      <br>
+        <div class="sub2">
+        <button id="sub2">Submit</button>
+    </div>
+            </section>
+           
+            <section class="container_colors container" id="contColors">
+        <div class="blue color" id="blueDiv">
+        
+            <span>
+                <input type="checkbox" name="blueN" id="blue" value="blueV">
+            </span>
+        </div>
+        <div class="yellow color" id="yellowDIv">
+        
+            <span>
+                <input type="checkbox" name="yellow" id="yellow" value="yellowV">
+            </span>
+        </div>
+        <div class="green color" id="greenDiv">
+        
+            <span>
+                <input type="checkbox" name="green" id="green" value="greenV">
+            </span>
+        </div>
+        <div class="red color" id="redDiv">
+        
+            <span>
+                <input type="checkbox" name="red" id="red" value="redV">
+            </span>
+        </div>
+        <button id="sub3"> Submit</button>
+            </section>
+
+            <section class="container_game container" id="game">
+
+<div class="home_1">
+<div class="blue color renew" id="blue2">
+
+</div>
+<p id="banner1">User</p>
+<div class="red color renew" id="red2">
+
+</div>
+</div>
+<div class="sub4">
+    <!-- <button id="roll" onclick=" humanTurn();  setTimeout(computerTurn, 3000);">
+    
+        row dice
+    </button> -->
+
+    <button id="roll"> row dice </button>
+
+    <div class="score">
+        <img src="1.png" id="img" class="image" alt="">
+        <img src="3.png" id="img2" class="image" alt="">
+</div>
+</div>
+<div class="home_2">
+<div class="green color renew" id="green2">
+
+</div>
+<p id="banner2">Computer</p>
+<div class="yellow color renew" id="yellow2">
+
+</div>
+</div>
+  </section>
+  <div class="scoreAlert">
+      <h1 id="scoreComp"></h1>
+      <h1 id="scorePlayer"></h1>
+  </div>
+  
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery-3.4.1.min.js"></script>
+<script src="/js/ludo.js"></script>
+
+</body>
+</html>
